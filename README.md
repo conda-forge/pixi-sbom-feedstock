@@ -3,7 +3,7 @@ About pixi-sbom-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pixi-sbom-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/millsks/pixi-sbom
+Home: https://millsks.github.io/pixi-sbom/
 
 Package license: Apache-2.0
 
@@ -11,10 +11,11 @@ Summary: Generate a CycloneDX or SPDX SBOM from a pixi.lock file
 
 Development: https://github.com/millsks/pixi-sbom
 
-Documentation: https://github.com/millsks/pixi-sbom/blob/main/docs/README.md
+Documentation: https://millsks.github.io/pixi-sbom/
 
-A pixi extension that writes a CycloneDX 1.6 or SPDX 2.3 JSON Software
-Bill of Materials for one or more environments of a pixi.lock file.
+A pixi extension that writes a CycloneDX 1.6 / 1.7 or SPDX 2.3 / 3.0.1
+JSON Software Bill of Materials for one or more environments of a
+pixi.lock file, with licenses, PyPI identities and a license policy gate.
 Once installed with `pixi global install pixi-sbom`, pixi discovers the
 `pixi-sbom` executable on PATH and exposes it as `pixi sbom`.
 
