@@ -15,7 +15,7 @@ source:
   sha256: 5c08c22999f4c64bb91ccdbe4836e23b43f9925c0417cbb924b899677d6976db
 
 build:
-  number: 0
+  number: 1
   script:
     - if: unix
       then: cargo auditable install --locked --bins --no-track --path . --root "$PREFIX"
@@ -32,12 +32,8 @@ requirements:
 
 tests:
   - script:
-      # The osx_arm64 package is cross-compiled on an osx_64 runner, which
-      # cannot execute the resulting binary ("Bad CPU type in executable").
-      - if: build_platform == target_platform
-        then:
-          - pixi-sbom --version
-          - pixi-sbom --help
+      - pixi-sbom --version
+      - pixi-sbom --help
   - package_contents:
       bin:
         - pixi-sbom
