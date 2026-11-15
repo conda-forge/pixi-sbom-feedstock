@@ -9,9 +9,7 @@ package:
   version: ${{ version }}
 
 source:
-  # From 1.13.2 pixi-sbom has a repository of its own again, tagged vX.Y.Z
-  # (1.12.0 to 1.13.1 came from aesir-oss/pixi-ext-contrib).
-  url: https://github.com/aesir-oss/pixi-sbom/archive/refs/tags/v${{ version }}.tar.gz
+  url: https://github.com/millsks/pixi-sbom/archive/refs/tags/v${{ version }}.tar.gz
   sha256: baf380d4e2c4061be85e41898e8ac893e8c1af7d9aa6efda63682bd17ade8d00
 
 build:
@@ -40,9 +38,9 @@ tests:
       strict: true
 
 about:
-  homepage: https://aesir-oss.github.io/pixi-sbom/
-  repository: https://github.com/aesir-oss/pixi-sbom
-  documentation: https://aesir-oss.github.io/pixi-sbom/
+  homepage: https://millsks.github.io/pixi-sbom/
+  repository: https://github.com/millsks/pixi-sbom
+  documentation: https://millsks.github.io/pixi-sbom/
   summary: Generate a CycloneDX or SPDX SBOM from a pixi.lock file
   description: |
     A pixi extension that writes a CycloneDX 1.6 / 1.7 or SPDX 2.3 / 3.0.1
