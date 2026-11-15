@@ -13,7 +13,7 @@ source:
   sha256: baf380d4e2c4061be85e41898e8ac893e8c1af7d9aa6efda63682bd17ade8d00
 
 build:
-  number: 0
+  number: 1
   script:
     - if: unix
       then: cargo auditable install --locked --bins --no-track --path . --root "$PREFIX"
